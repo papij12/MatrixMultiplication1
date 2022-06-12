@@ -1,0 +1,48 @@
+ //foreach (int i in ParallelAlgorithm(M1, M2, col1, row1, col2, row2))
+            //{
+            //    Console.Write($"_{i}_|");
+            //    if (count2 == col2)
+            //    {
+            //        Console.WriteLine();
+            //        count2 = 0;
+            //    }
+            //    count2++;
+            //}
+
+
+ //Product
+            Console.WriteLine("\n");
+            Console.WriteLine("product of Matrix1 and Matrix 2");
+            Console.WriteLine("--------");
+
+   // M2
+            Console.WriteLine("\n");
+            Console.WriteLine("Matrix 2");
+            Console.WriteLine("--------");
+            M2 = GeneraterandomMatrix(row2, col2);
+            foreach (int i in M2)
+            {
+                Console.Write($"_{i}_|");
+                if (count2 == col2)
+                {
+                    Console.WriteLine();
+                    count2 = 0;
+                }
+                count2++;
+            }
+   //M1
+            Console.WriteLine("Matrix 1");
+            Console.WriteLine("--------");
+            M1 = GeneraterandomMatrix(row1, col1);
+            foreach (int i in M1)
+            {
+
+                Console.Write($"_{i}_|");
+                if (count1 == col1)
+                {
+                    Console.WriteLine();
+                    count1 = 0;
+                }
+
+                count1++;
+            }
